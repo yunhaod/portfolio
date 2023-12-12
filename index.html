@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Yun Hao Dong</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Yun Hao Dong</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id ="profile">
+        <div class = "section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Yun Hao Dong Picture" class ="profile-pic">
+        </div>
+        <div class = "section__text">
+            <p class = "section_text_p1">Hello, I'm Yun Hao</p>
+            <div class = "btn-container">
+                <button 
+                class="btn btn-color-2" onclick="window.open('./assets/YunHaoDong_Resume.pdf')">
+                Resume →
+            </button>
+            <button 
+                class="btn btn-color-1" onclick="location.href='./#contact'"">
+                Contact Info ↓
+            </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt = "My Linkedin Profile"
+                class="icon" onclick="location.href= 'https://www.linkedin.com/in/yun-hao-dong/'"/>
+                <img src="./assets/github.png" alt = "My Github Profile"
+                class="icon" onclick="location.href= 'https://github.com/yunhaod'"/>
+            </div>
+        </div>
+      </section>
+      <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/about-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="text-container">
+              <p>
+                → Hi! I'm Yun, studying Computer Engineering at NYU Tandon.
+                    I'm interested in building new technology products that
+                    involves integrating a mix of hardware and software into a functioning prototype. 
+              </p>
+              <br>
+              <p>
+                → I'm part of the Robotics Design Team at NYU Tandon. My involvement in the team
+                  revolves around testing sensors and electrical components to make the robot move, dig, and build!
+              </p>
+              <br>
+              <p>
+                → I love exploring new places and restaurants. I have been to several boba shops and dessert places in NY.
+                  Hit me up with recommendations!
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+    <section id="experience">
+        <h1 class="title"> My Experience</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+              <img
+                src="./assets/ugsrp-pic.png"
+                alt="Ultraleap hands"
+                class="experience1-pic"
+              />
+            </div>
+            <div class="experience-details-container">
+            <div class = "headline">
+                <h1>
+                    NYU Undergraduate Summer Research • 2023
+                </h1>
+            </div>
+              <div class="text-container">
+                <p>
+                  <br>
+                  I was able to partake in Professor S. Farokh Atashzar's ongoing research 
+                  projects along with 4 other student researchers. One of our project was connecting
+                  Unity and computer vision for hand tracking in the virtual environment. 
+                </p>
+                <br>
+                <p>
+                    <a href = "https://drive.google.com/file/d/1lnqC07irXoni8VL5D6uIoNivJ2w9C3oI/view?usp=sharing"
+                    target = "_blank">
+                  <u>Read more abour work</u>
+                  </a>
+                  <br>
+                  <a href = "https://drive.google.com/file/d/1rp6ExTwQNSM7kyCi-BA8d_LRvSlRkGGL/view"
+                    target = "_blank">
+                  <u>Check out research projects from other students!</u>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-container">
+            <div class="section__pic-container">
+              <img
+                src="./assets/amazoniahack-pic.png"
+                alt="AmazoniaHack picture"
+                class="experience4-pic"
+              />
+            </div>
+            <div class="experience-details-container">
+            <div class = "headline">
+                <h1>
+                    Amazonia Hackathon • 2022
+                </h1>
+            </div>
+              <div class="text-container">
+                <p>
+                  <br>
+                  This hackathon was an effort to combat deforestation through innovation and technology. 
+                  I was part of a team of 5, comprised of multiple disciplines. Our project was a GPS module tracking system 
+                  that tracks changes in movement behavior. We won second place in the hackathon.
+
+                </p>
+                <br>
+                <p>
+                  <a href = "https://eventornado.com/submission/track-n-save?s=1#ideas" 
+                  target = "_blank" >
+                    <u>Learn more about our proposed solution</u>
+                  </a>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-container">
+            <div class="section__pic-container">
+              <img
+                src="./assets/rdt-pic.png"
+                alt="RDT picture"
+                class="experience2-pic"
+              />
+            </div>
+            <div class="experience-details-container">
+            <div class = "headline">
+                <h1>
+                    NYU Robotics Design Team • 2022
+                </h1>
+            </div>
+              <div class="text-container">
+                <p>
+                  <br>
+                  I've been on the team for 2 years so far! My responsibilities entail 
+                  testing sensors and revitalizing past robots we have developed for 
+                  future testing and extraction. Our team competes in NASA's Robotic Mining Competition:
+                  Lunabotics. 
+                </p>
+                <br>
+                <p>
+                  <a href = "https://engineering.nyu.edu/research-innovation/student-research/vertically-integrated-projects/vip-teams/nyu-robotic-design-team" 
+                  target = "_blank" >
+                    <u>Read more about our team and what we do</u>
+                  </a>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-container">
+            <div class="section__pic-container">
+              <img
+                src="./assets/doris-dev-pic.png"
+                alt="Profile picture"
+                class="experience3-pic"
+              />
+            </div>
+            <div class="experience-details-container">
+            <div class = "headline">
+                <h1>
+                    Doris Dev • 2022
+                </h1>
+            </div>
+              <div class="text-container">
+                <p>
+                  <br>
+                  During the summer, I got to work with industry design engineers in
+                  developing new consumer products. I was responsible for testing current 
+                  market goods that were competitive, and brainstorm plausible improvements
+                  that can be implemented.
+                </p>
+                <br>
+                <p >
+                <a href = https://www.doris.dev target = "_blank">
+                    <u>Check out Doris Dev and their Designs</u> 
+                </a>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+      </section>
+      <section id="projects">
+        <h1 class="title">My Projects</h1>
+        <div class="projects-container">
+          <p class = "coming-soon">Coming soon....</p>
+        </div>
+    </section>
+      <section id="contact">
+        <h1 class="title">Let's Chat</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:yd2435@nyu.edu">yd2435@nyu.edu</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/yun-hao-dong/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+    <script src="scipt.js"></script>
+</body>
+</html>
