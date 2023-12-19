@@ -16,10 +16,16 @@
     #desktop-nav {
       display: none;
     }
+
+    #profile{
+      margin-bottom: 0rem;
+    }
+
     #profile,
     .profile-pic{
         max-width: 100%;
         height:auto;
+        padding-top: 0vh;
     }
     #hamburger-nav {
       display: flex;
@@ -33,6 +39,7 @@
       display: block;
       margin-left: 0;
       margin-right: 0;
+      margin-bottom: 2rem;
     }
     .arrow {
       display: none;
@@ -40,7 +47,6 @@
     section,
     .section-container {
       height: fit-content;
-      margin-bottom: 4rem;
     }
     section {
       margin: 0 5%;
@@ -52,7 +58,12 @@
     }
     .about-containers {
       margin-top: 0;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
+    }
+    .about-pic {
+      border-radius: 2rem;
+      margin-left: 2rem;
+      margin-bottom: 2rem;
     }
   }
   

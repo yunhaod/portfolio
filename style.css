@@ -54,9 +54,9 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: rgb(255, 255, 255);
   text-decoration: underline;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -172,6 +172,7 @@ section {
   background-image: url("./assets/background-profile.png");
   background-size: cover;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .section__pic-container {
@@ -216,7 +217,7 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   gap: 1rem;
 }
 
