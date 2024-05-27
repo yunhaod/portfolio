@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="project_style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="projectmedia.css"/>
 </head>
-<body>
-    <section class = "intro">
+<body class = "fade-in">
+    <a href="index.html" class="back-button">&#8592; Portfolio</a>
+    <div class = "intro">
         <h2 class = "small-description">Some projects that I have worked on...</h2>
-    </section>
-   
-    <section id = "projects-container"> 
-        <section class = "project1-pic">
-            
-        </section>
-        <section class = "project2-pic">
-            
-        </section>
-    </section>
-    
+    </div>
+    <div id = "projects-container"> 
+        <div class="project_item" >
+            <img src="./assets/snapspecs_pic.png" alt="Image 1">
+            <div class="overlay"> A detachable camera system for
+                photo capturing and transfering</div>
+            <h2>SnapSpecs</h2>
+        </div>
+        <div class="project_item">
+            <div class="overlay">GPS system for tracking changes in movement behavior to combat deforestation</div>
+            <img src="./assets/amazoniahack_pic.png" alt="Image 2">
+            <h2>Track 'n Save</h2>
+        </div>
+    </div>
 </body>
 </html>
