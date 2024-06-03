@@ -30,7 +30,7 @@ body {
 .back-button {
   position: absolute;
   top: 20px;
-  left: 35px;
+  left: 45px;
   padding: 10px 15px;
   margin-bottom: 30px;
   font-size: 16px;
@@ -51,10 +51,11 @@ html {
 }
 
 .intro{
-    padding-top: 10vh;
+    padding-top: 12vh;
     height: 5vh;
-    margin-left: 5vh;
+    margin-left: 45px;
     margin-right: 5vh;
+    margin-bottom: -20px;
 }
 
 #projects-container {
@@ -98,9 +99,10 @@ html {
 
 .project_item:hover {
   transform: translateY(-5px);
+  cursor: pointer;
 }
 
-.overlay {
+.project_item .overlay {
   position: absolute;
   top: 0;
   left: 0;

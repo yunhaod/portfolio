@@ -1,0 +1,310 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+  
+}
+
+.fade-in {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.project_title{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10vh;
+}
+
+.project_links {
+    display: flex;
+    font-size: medium;
+    padding-right: 10px;
+}
+
+.project_links a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+}
+  
+.project_links a:hover {
+    margin-left: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.details{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    background-color:rgb(2, 88, 163);
+    color:white;
+    margin-top: 120px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.background_pic{
+    max-width: 45%;
+    float:inline-end;
+    margin: 20px;
+    margin-top: 50px;
+    margin-right: -20px;
+    margin-left: 10vh;
+    overflow: hidden;
+}
+
+.group_photo{
+    width:85%;
+    height: auto;
+}
+
+.column{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.introduction{
+    padding-top: 20px;
+    margin: 40px;
+    margin-bottom: 80px;
+}
+
+.issue{
+    background-color: rgb(233, 140, 77);
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    display: flex;
+}
+
+.issue h2{
+    margin-bottom: 40px; 
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.issue p{
+    margin: 40px;
+    margin-top: -20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.text-container{
+    max-width: 45%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.raise_phone{
+    max-width: 50%;
+    padding: 20px;
+}
+
+
+.solution{
+    margin: 40px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.outcome{
+    margin: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.prototype{
+    margin: 40px;
+    margin-top: 40px;
+}
+
+.content{
+    display: flex;
+}
+
+.schematic{
+    max-width: 60%;
+    margin: 20px;
+    padding-top: -40px;
+    margin-top: -40px;
+}
+
+.proto_text{
+    margin-right: 60px;
+
+}
+
+.next{
+    margin: 40px;
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-left: -10px;
+    padding: 20px; /* Adjust padding */
+    justify-content: center;
+}
+
+.next-project{
+    margin-left: 80%;
+    justify-content: center;
+}
+
+.next-project a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Adjust link color */
+}
+
+.next-project a:hover {
+    color: #666; /* Adjust link color on hover */
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 48px; /* Adjust font size */
+    line-height: 1; /* Ensure arrow does not affect vertical alignment */
+    vertical-align: middle; /* Align arrow with text middle */
+}
+
+.text {
+    font-size: 24px; /* Adjust font size */
+    margin-left: 5px; /* Adjust spacing between arrow and text */
+}
+
+@media screen and (max-width: 1000px){
+    
+    .next-project{
+        margin-left: 75%;
+        justify-content: center;
+    }
+
+    .background_pic{
+        max-width: 45%;
+        float:inline-end;
+        margin: 20px;
+        margin-top: 70px;
+        margin-right: -20px;
+        margin-left: 10vh;
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (max-width: 830px){
+    
+    .next-project{
+        margin-left: 65%;
+        justify-content: center;
+    }
+
+    .background_pic{
+        max-width: 45%;
+        float:inline-end;
+        margin: 20px;
+        margin-top: 80px;
+        margin-right: -20px;
+        margin-left: 10vh;
+        overflow: hidden;
+    }
+
+    .issue{
+        background-color: rgb(233, 140, 77);
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .issue h2{
+        margin-bottom: 20px; 
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .issue p{
+        margin: 40px;
+        margin-top: -10px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .text-container{
+        display: flex;
+        max-width: max-content;
+    }
+
+    .raise_phone{
+        margin: auto;
+        margin-top: 10vh;
+        max-width: 80%;
+        padding-left: 20px;
+    }    
+
+    .schematic{
+        max-width: 55%;
+        height: auto;
+        margin: 10px;
+        padding-top: -40px;
+        margin-top: -40px;
+    }
+
+    .proto_text{
+        margin-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    
+    .next-project{
+        margin-left: 60%;
+        justify-content: center;
+    }
+
+    .content{
+        flex-wrap: wrap;
+    }
+
+    .schematic{
+        max-width: 70%;
+        margin: 10px;
+    }
+}
