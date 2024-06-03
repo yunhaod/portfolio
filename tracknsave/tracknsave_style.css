@@ -78,7 +78,8 @@ body {
 
 .challenge {
     position: relative;
-    background-image: url('./assets/amazonia_background.png');
+    margin-right: -10px;
+    background-image: url('../assets/amazonia_background.png');
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; 
     background-repeat: no-repeat; /* Prevent the background image from repeating */
