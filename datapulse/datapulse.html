@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataPulse</title>
+    <link rel="stylesheet" href="datapulse_style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png" style="height:50%;">
+</head>
+<body class = "fade-in">
+    <h1 class="project_title">
+        DataPulse
+        <section class="project_links">
+            <a href="../index.html">Portfolio</a>
+            <a href="../project_listing/projects.html">Projects</a>
+        </section>
+    </h1>
+    <div class="CAD">
+        <img src="../assets/CAD_datapulse.png" class = "cad_image">
+        <p>3D CAD Rendering of Project</p>
+    </div>
+    <section class="details">
+        <div class="column">
+            <div class="item">
+                <h2><b>Project Details</b></h2>
+            </div>
+            <div class="item">
+                <p>Personal Project</p>
+            </div>
+            <div class="item">
+                <p>2024</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="item">
+                <h2><b>Role</b></h2>
+            </div>
+            <div class="item">
+                <p>Embedded Research</p>
+            </div>
+            <div class="item">
+                <p>Prototyping</p>
+            </div>
+            <div class="item">
+                <p>3D Modeling</p>
+            </div>
+            <div class="item">
+                <p>Software Development</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="item">
+                <h2><b>Duration</b></h2>
+            </div>
+            <div class="item">
+                <p>April - June</p>
+            </div>
+        </div>
+    </section>
+    <section class="introduction">
+        <h2>Overview</h2>
+        <p>This project consists of hardware and software components, where the Arduino is responsible for reading sensor data 
+            and transmitting the data over Bluetooth. The python script attempts to scan for the Arduino and obtain the sensor readings,
+            logging it into a CSV file periodically. The data in the CSV file can be analyzed by plotting the changes over time.
+            The scripts can be found in the following <a href = "https://github.com/yunhaod/DataPulse" target="_blank" >GitHub Repository</a>.
+        </p>
+
+        <p>The CAD model features a battery, microcontroller, and sensor for detecting data around the environment.
+            The system is all contained in a case for wireless communication.
+        </p>
+    </section>
+    <section class="outcome">
+        <div class = "scan_pic">
+            <img src="../assets/code_result.png" class="scan_res">
+            <p>Initial success with interfacing Bluetooth features </p>
+        </div>
+        <h2>Outcome</h2>
+        <p>Across multiple systems of the project, whether its software or hardware, 
+            each system succeeds in completing its tasks of the project, ensuring reliability 
+            for any users who might find this project useful.</p>
+    </section> 
+    <section class="prototype">
+        <div class="proto_img">
+        <img src="../assets/data_charts.png" class="chart">
+        <caption class="caption">Sample trend chart generated</caption>
+        </div>
+        <div class="text-container">
+                <h2>Prototype</h2>
+                <p> In my project, my Arduino offers sensor service with the characteristics of humidity and temperature. </p>
+                <p>The python script is able to detect nearby Bluetooth modules and filter by the name of the devices it discovers. 
+                    Upon encountering an Arduino, it will connect and attempt to read for specific characteristics 
+                    (in this case, humidity & temperature). 
+                </p>
+                <p> The data is periodically logged into a CSV file, which can then be analyzed with Matplotlibs for changes over time
+                    using the data analysis file.
+                </p>
+        </div>
+    </section>  
+    <section class="takeaway">
+        <h2>Takeaways</h2>
+        <div class="takeaway_content">
+            <div class="takeaway_text">
+                <p>From this project, I was able to learn more and interface with Bluetooth features.
+                    It allowed me to fully explore what its like to be working on an embedded project,
+                    along with some additional software additions to enhance the capabilities.</p>
+
+                <p> The project was also made to be customizable for anyone who might find this application helpful, whether its 
+                    adding addtional services to the microcontroller, or more characteristics to each service.  
+                    
+                </p>
+            </div>
+            <div class = "scan">
+            <img src="../assets/scan_code.png" class="scan_code">
+            <caption class="caption">Code for detecting nearby Arduinos through Bluetooth</caption>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="next-project">
+            <span class="arrow">&gt;</span>
+            <a href="../snapspecs/snapspecs.html">
+                <span class="text">SnapSpecs</span>
+            </a>
+        </div>
+    </footer>
+
+</body>
