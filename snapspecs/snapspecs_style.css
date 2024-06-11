@@ -231,10 +231,6 @@ footer {
     vertical-align: middle; /* Align arrow with text middle */
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
-
 
 @media screen and (max-width: 1000px){
     
