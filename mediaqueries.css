@@ -12,7 +12,7 @@
     }
   }
   
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1100px) {
     #desktop-nav {
       display: none;
     }
@@ -41,8 +41,10 @@
       margin-right: 0;
       margin-bottom: 20px;
     }
-    .arrow {
-      display: none;
+    #profile,
+    .section__text{
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     section,
     .section-container {
@@ -65,6 +67,15 @@
       margin-left: 2rem;
       margin-bottom: 2rem;
     }
+  
+    #experience,
+    .section-container{
+      margin-bottom: 40px;
+    }
+
+    #contact{
+      margin-top: -20px;
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -72,9 +83,12 @@
     footer {
       height: 40vh;
     }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
+
+    #profile,
+    .profile-pic{
+        max-width: 100%;
+        height:auto;
+        padding-top: 0vh;
     }
     article {
       font-size: 1rem;
@@ -107,8 +121,6 @@
       text-align: center;
     }
     .section__pic-container {
-      width: auto;
-      height: 46vw;
       justify-content: center;
     }
     .section__text__p2 {
@@ -116,8 +128,5 @@
     }
     .title {
       font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
     }
   }

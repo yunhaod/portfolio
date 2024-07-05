@@ -293,9 +293,11 @@ section {
 }
 
 .about-details-container {
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-right: 7px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .about-containers,
@@ -308,12 +310,6 @@ section {
 .about-pic {
   border-radius: 2rem;
   margin-left: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: 5rem;
-  bottom: 2.5rem;
 }
 
 .details-container {
@@ -359,6 +355,10 @@ section {
     flex-direction: column;
     margin-right: 7px;
   }
+
+  .experience-details-container a:hover{
+      color: rgb(0, 0, 0);
+  }
   
   .experience-containers,
   .experience-details-container {
@@ -388,12 +388,6 @@ section {
     margin-left: 1.5rem;
   }
   
-  .arrow {
-    position: absolute;
-    right: 5rem;
-    bottom: 2.5rem;
-  }
-  
   .details-container {
     padding: 3rem;
     flex: 1;
@@ -417,20 +411,6 @@ section {
     object-fit: contain;
   }
 
-/* PROJECTS */
-#projects{
-    margin-top: 1rem;
-}
-
-.projects-container{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.coming-soon{
-  text-align: center;
-}
-
 /* CONTACT */
 
 #contact {
@@ -449,6 +429,10 @@ section {
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
+}
+
+.contact-info-upper-container a:hover{
+    color: rgb(0, 0, 0);
 }
 
 .contact-info-container {

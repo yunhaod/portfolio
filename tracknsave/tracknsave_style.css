@@ -95,10 +95,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
-    /* justify-content: center; Center content horizontally */
-    align-items: center; /* Center content vertically */
+    align-items: center; 
 }
 
 .challenge_content{
@@ -106,14 +105,14 @@ body {
 }
 
 .challenge h2 {
-    font-size: 36px; /* Adjust font size */
-    margin-bottom: 20px; /* Adjust margin */
+    font-size: 36px;
+    margin-bottom: 20px; 
     white-space: nowrap;
 }
 
 .challenge p {
     width:70%;
-    font-size: 18px; /* Adjust font size */
+    font-size: 18px; 
 }
 
 .title{
@@ -190,27 +189,28 @@ body {
 
 .bullet_list ul {
     list-style: none;
-    padding-left: 20px; /* Adjust as necessary */
+    padding-left: 20px;
 }
 
 .bullet_list li {
     position: relative;
-    margin-bottom: 10px; /* Adjust spacing between items */
+    margin-bottom: 10px; 
 }
 
 .bullet_list li::before {
-    content: '‣'; /* Use any symbol or emoji */
+    content: '‣'; 
     position: absolute;
-    left: -20px; /* Adjust position as necessary */
+    left: -20px;
     margin-right: 10px;
-    color: #826cff; /* Change color */
-    font-size: 40px; /* Change size */
+    color: #826cff;
+    font-size: 40px; 
 }
 
 footer {
     margin-left: -10px;
-    padding: 20px; /* Adjust padding */
+    padding: 20px;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .next-project{
@@ -219,24 +219,23 @@ footer {
 }
 
 .next-project a {
-    text-decoration: none; /* Remove underline */
-    color: #333; /* Adjust link color */
+    text-decoration: none; 
+    color: #333; 
 }
 
 .next-project a:hover {
-    color: #666; /* Adjust link color on hover */
     cursor: pointer;
 }
 
 .arrow {
-    font-size: 48px; /* Adjust font size */
-    line-height: 1; /* Ensure arrow does not affect vertical alignment */
-    vertical-align: middle; /* Align arrow with text middle */
+    font-size: 48px; 
+    line-height: 1; 
+    vertical-align: middle;
 }
 
 .text {
-    font-size: 24px; /* Adjust font size */
-    margin-left: 5px; /* Adjust spacing between arrow and text */
+    font-size: 24px; 
+    margin-left: 5px; 
 }
 
 @media screen and (max-width: 900px){
@@ -247,8 +246,8 @@ footer {
     }
 
     .challenge h2 {
-        font-size: 30px; /* Adjust font size */
-        margin-bottom: 20px; /* Adjust margin */
+        font-size: 30px; 
+        margin-bottom: 20px; 
         white-space: nowrap;
     }
 

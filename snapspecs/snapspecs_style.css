@@ -4,7 +4,6 @@
 body {
   font-family: "Poppins", sans-serif;
   line-height: 30px;
-  
 }
 
 .fade-in {
@@ -59,7 +58,7 @@ body {
     color:white;
     margin-top: 120px;
     margin-left: -10px;
-    margin-right: -10px;
+    margin-right: -20px;
     padding-left:40px;
     padding-right:40px;
 }
@@ -82,7 +81,7 @@ body {
     margin: 20px;
     margin-top: 50px;
     margin-right: -20px;
-    margin-left: 10vh;
+    margin-left: 20px;
     overflow: hidden;
 }
 
@@ -106,7 +105,7 @@ body {
 .issue{
     background-color: rgb(233, 140, 77);
     margin-left: -10px;
-    margin-right: -10px;
+    margin-right: -20px;
     margin-bottom: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -175,15 +174,15 @@ body {
 
 footer {
     margin-left: -10px;
-    padding: 20px; /* Adjust padding */
+    padding: 20px; 
     justify-content: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    padding-bottom: 20px;
 }
 
-/* Styling for previous project */
 .prev-project {
     display: flex;
     align-items: center;
@@ -196,10 +195,10 @@ footer {
     color: inherit;
 }
 
-/* Styling for previous project arrow */
+
 .prev-proj-arrow {
-    font-size: 48px; /* Adjust font size */
-    line-height: 1; /* Ensure arrow does not affect vertical alignment */
+    font-size: 48px; 
+    line-height: 1;
     vertical-align: middle; 
 }
 
@@ -211,7 +210,7 @@ footer {
 .next-proj-text {
     font-size: 24px;
 }
-/* Styling for next project */
+
 .next-project {
     margin-left: 64%;
     display: flex;
@@ -226,9 +225,9 @@ footer {
 }
 
 .next-proj-arrow {
-    font-size: 48px; /* Adjust font size */
-    line-height: 1; /* Ensure arrow does not affect vertical alignment */
-    vertical-align: middle; /* Align arrow with text middle */
+    font-size: 48px; 
+    line-height: 1; 
+    vertical-align: middle; 
 }
 
 
@@ -248,7 +247,7 @@ footer {
 @media screen and (max-width: 830px){
     
     .next-project{
-        margin-left: 50%;
+        margin-left: 49%;
         justify-content: center;
     }
 
@@ -306,7 +305,7 @@ footer {
 @media screen and (max-width: 600px){
     
     .next-project{
-        margin-left: 33%;
+        margin-left: 30%;
         justify-content: center;
     }
 
