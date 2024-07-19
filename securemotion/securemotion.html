@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureMotion</title>
+    <link rel="stylesheet" href="securemotion_style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png" style="height:50%;">
+</head>
+<body class = "fade-in">
+    <h1 class="project_title">
+        SecureMotion
+        <section class="project_links">
+            <a href="../index.html">Portfolio</a>
+            <a href="../project_listing/projects.html">Projects</a>
+        </section>
+    </h1>
+    <div class="app_interface">
+        <img src="../assets/secureapp_connect.png" class = "app_image">
+        <img src="../assets/secureapp_connected.png" class = "app_image">
+    </div>
+    <div class="app_caption">
+        <p>Final App Interfaces</p>
+    </div>
+    <section class="details">
+        <div class="column">
+            <div class="item">
+                <h2><b>Project Details</b></h2>
+            </div>
+            <div class="item">
+                <p>Personal Project</p>
+            </div>
+            <div class="item">
+                <p>2024</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="item">
+                <h2><b>Role</b></h2>
+            </div>
+            <div class="item">
+                <p>Mobile App Integration</p>
+            </div>
+            <div class="item">
+                <p>Linux Interfacing</p>
+            </div>
+            <div class="item">
+                <p>Embedded Software Development</p>
+            </div>
+            <div class="item">
+                <p>IoT Research</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="item">
+                <h2><b>Duration</b></h2>
+            </div>
+            <div class="item">
+                <p>June - July</p>
+            </div>
+        </div>
+    </section>
+    <section class="introduction">
+        <h2>Overview</h2>
+        <p> This project aims to improve home security by notifying homeowners of any intrusion detected by a motion sensor.
+            Upon connection and subscription with the buttons in the app, messages will appear below,
+            indicating whether there appears to be a threat to the home. 
+        </p>
+        <p>
+        More details about the project can be found in this <a href=""> GitHub Repository </a>
+        </p>
+    </section>
+    <section class="outcome">
+        <h2>Outcome</h2>
+        <div class="finalsystem_pic">
+            <img src="../assets/finalsystem.png" class="finalsystem_res" alt="Final System">
+            <p>The app succeeds in receiving the messages from the sensor client upon any updates.
+            </p>
+        </div>
+    </section>
+    <section class="introduction">
+        <h2>Introduction</h2>
+        <p> This project utilizes MQTT(Message Queuing Telemetry Transport) for transmitting the messages between the clients.
+            MQTT is a messaging protocol for IoT, which is ideal for establishing connection between remote devices. The MQTT broker,
+            in particular, is responsible for relaying the messages for each topic within the network.
+        </p>
+    </section>
+    <section class="prototype">
+        <div class="proto_img">
+        <img src="../assets/local_publish_subscribe.png" class="chart">
+        <caption class="caption">Local MQTT Broker Output</caption>
+        </div>
+        <div class="text-container">
+                <h2>Iterations</h2>
+                <p> The fist few iterations of the project were testing functionality of the system on a local MQTT broker 
+                    that ran from my computer. After validating the MQTT system, the broker was hosted over the internet. 
+                    A system of authentication was added to improve the security of the overall system, allowing only authorized users.
+                </p>
+        </div>
+    </section>
+    <section class="initial_app">
+        <img src="../assets/initial_app_testing.png" class="initial_app_img">
+        <div class="initial_app_text">
+            <p> The messages appeared after subscribing, shown in the output console for the initial app design. In order to prevent API misuse, most buttons are hidden until the 
+                MQTT Manager is connected to the MQTT broker in the final version of app. 
+            </p>
+        </div>
+    </section>
+    <section class="hardware">
+        <div class = "door">
+            <img src="../assets/door_opening.png" class="door_open">
+        </div>
+        <h2>Hardware</h2>
+        <p>
+        An ESP32 was chosen to process the sensor data and for connecting to MQTT broker. The microcontroller determines whether there was an intruder through the use of a hall effect sensor.
+        </p>
+        <p>
+        A magnet is attached at the door, and when the door swings open, it will pick up on this event and notify the homeowner.
+        </p>
+        <p>
+        The warning will remain until the app publishes a message of acknowledgement.
+        </p>
+    </section>
+    <section class="gif">
+        <div class="demo">
+            <img src="../assets/securemotion_gif.gif" alt="demonstration gif" class="demo_gif"/>
+        </div>
+        <p>To toggle the warning, a message of acknowledgment has to be sent from the app. </p>
+        </div>
+    </section>
+    <section class="takeaway">
+        <h2>Takeaways</h2>
+        <div class="takeaway_content">
+                <p> Through this project, I was able to learn more about IoT protocols, authentication systems, and backend integration in swift.
+                    I gained comprehensive insights on the fundamentals of MQTT and integrating it into real world applications.
+                </p>
+        </div>
+    </section>
+    <footer>
+        <div class="next-project">
+            <span class="arrow">&gt;</span>
+            <a href="../datapulse/datapulse.html">
+                <span class="text">DataPulse</span>
+            </a>
+        </div>
+    </footer>
+</body>    
