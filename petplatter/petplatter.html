@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPlatter</title>
+    <link rel="stylesheet" href="petplatter_style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png" style="height:50%;">
+</head>
+<body class = "fade-in">
+    <h1 class="project_title">
+        PetPlatter
+        <section class="project_links">
+            <a href="../index.html">Portfolio</a>
+            <a href="../project_listing/projects.html">Projects</a>
+        </section>
+    </h1>
+    <div class="model">
+        <img src="../assets/petplatter_model.png" class = "model_image">
+    </div>
+    <div class="model_caption">
+        <p>Device Outlook : Food Dispenser(Left) & Water Pump(Right)</p>
+    </div>
+    <section class="details">
+        <div class="column">
+            <div class="item">
+                <h2><b>Project Details</b></h2>
+            </div>
+            <div class="item">
+                <p>Personal Project</p>
+            </div>
+            <div class="item">
+                <p>2024</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="item">
+                <h2><b>Role</b></h2>
+            </div>
+            <div class="item">
+                <p>Mobile App Integration</p>
+            </div>
+            <div class="item">
+                <p>Hardware Planning</p>
+            </div>
+            <div class="item">
+                <p>Embedded Software</p>
+            </div>
+            <div class="item">
+                <p>IoT Research</p>
+            </div>
+            <div class="item">
+                <p>3D Modeling</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="item">
+                <h2><b>Duration</b></h2>
+            </div>
+            <div class="item">
+                <p>July - August</p>
+            </div>
+        </div>
+    </section>
+    <section class="introduction">
+        <div class="introduction-content">
+            <div class="intro_text">
+                <h2>Introduction</h2>
+                <p> I really want a shiba (maybe more than 1) in the future. It has inspired me to make 
+                    my own pet-feeding device that I can control from afar. In this project, the heart of 
+                    long distance control is WebSockets, an IoT protocol that supports bidirectional, real-time, and long term connections 
+                    between clients and servers. Here, an iOS app and the physical device are connected for communication and command execution.
+                </p>
+                <p>
+                    The app contains features for feeding food and refilling water. More technical details about the project can be found in this <a href="" target="_blank"> GitHub Repository </a>
+                </p>
+            </div>
+            <div class="shiba_img">
+                <img src="../assets/shiba.png" class="shiba">
+            </div>
+        </div>
+    </section>    
+    <section class="outcome">
+        <h2>Outcome</h2>
+        <div class="gif_pic">
+            <img src="../assets/petplatter_appgif.gif" class="app_res" alt="Performance">
+            <p>The app succeeds in receiving the any warnings and the device can execute commands from the app.
+            </p>
+        </div>
+    </section>
+    <section class="prototype">
+        <div class="proto_img">
+            <img src="../assets/petplatter_ideation.png" class="web">
+        </div>
+        <div class="proto-text-container">
+                <h2>Ideation to Prototype</h2>
+                <p> 
+                    The WebSocket server was initially hosted locally, which transitioned into usage of 
+                    AWS Elastic Compute Cloud for improvements in security and reliability for application. 
+                </p>
+        </div>
+    </section>
+    <section class="final_app">
+        <img src="../assets/pet_app_interface.png" class="final_app_img">
+        <div class="final_app_text">
+            <p> The iOS app has 2 views, which has a page for connection as well as the other page for the majority of functionalities.
+                When the app receives a warning for low water content in the bowl, the warning disappears
+                after water is refilled.
+            </p>
+        </div>
+    </section>
+    <section class="hardware">
+        <div class="hardware-content">
+            <div class="hardware_text">
+                <h2>Hardware</h2>
+                <p>
+                    An ESP32 was used for WiFi connectivity to connect to the WebSocket server. 
+                </p>
+                <p>
+                    The physical device consists of servo motors for replenishing food and a peristaltic liquid pump for water refill. The servo motor would flip open the 
+                    cap (as shown in the gif) for food to fall out, and close the cap after a time interval.
+                </p>
+            </div>
+            <div class="servo">
+                <img src="../assets/petplatter_servo.gif" class="servo_open">
+            </div>
+        </div>
+    </section>
+    <section class="takeaway">
+        <h2>Takeaways</h2>
+        <div class="takeaway_content">
+                <p> This project was really fun to build. It exposed me to a different IoT protocols as well as 
+                    other aspects of embedded software. It was exciting when the WebSocket server echoed messages correctly 
+                    and integrating it into Swift for app design. 
+                </p>
+        </div>
+    </section>
+    <footer>
+        <div class="next-project">
+            <span class="arrow">&gt;</span>
+            <a href="../securemotion/securemotion.html">
+                <span class="text">SecureMotion</span>
+            </a>
+        </div>
+    </footer>
+</body>

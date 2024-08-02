@@ -62,18 +62,17 @@ html {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  max-width: 1400px;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
   box-sizing: border-box;
   float:inline-start
 }
 
 .project_item { 
   text-align: center;
-  width: calc(50% - 40px);
+  width: calc(50% - 60px);
   height: fit-content;
-  margin: 20px; 
+  margin: 30px; 
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -118,7 +117,7 @@ html {
   opacity: 0;
   transform: translateY(100%);
   transition: transform 0.5s ease, opacity 0.3s ease;
-  pointer-events: none; /* removes flickering from hovering*/
+  pointer-events: none; 
   border-radius: 8px;
 }
 
