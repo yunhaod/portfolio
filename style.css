@@ -50,12 +50,13 @@ nav {
 a {
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: rgb(0, 0, 0);
 }
 
-a:hover {
+.nav-links a:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
+  text-decoration-style: wavy;
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -453,4 +454,31 @@ section {
 
 .email-icon {
   height: 2.5rem;
+}
+
+footer{
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #000000;
+}
+
+.footer{
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  margin-bottom: 50px;
+}
+
+.foot_links{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+
+}
+
+.foot_links a:hover{
+  text-decoration-color: black;
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
