@@ -30,12 +30,12 @@ body {
 .back-button {
   position: absolute;
   top: 20px;
-  left: 45px;
+  left: 60px;
   padding: 10px 15px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   font-size: 16px;
   color: white;
-  background-color: #007BFF;
+  background-color: #685ed1;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -50,20 +50,13 @@ html {
   scroll-behavior: smooth;
 }
 
-.intro{
-    padding-top: 12vh;
-    height: 5vh;
-    margin-left: 45px;
-    margin-right: 5vh;
-    margin-bottom: -20px;
-}
-
 #projects-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   margin: auto;
   padding: 30px;
+  margin-top: 30px;
   box-sizing: border-box;
   float:inline-start
 }
