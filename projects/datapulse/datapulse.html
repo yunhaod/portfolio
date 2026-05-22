@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataPulse</title>
+  <link rel="stylesheet" href="datapulse_style.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+</head>
+<body class="fade-in">
+
+  <!-- ── Navigation title bar ──────────────────────────────── -->
+  <h1 class="project_title">
+    DataPulse
+    <nav class="project_links" aria-label="Site navigation">
+      <a href="../../index.html">Portfolio</a>
+      <a href="../../project_listing/projects.html">Projects</a>
+    </nav>
+  </h1>
+
+  <!-- ── CAD hero image ────────────────────────────────────── -->
+  <div class="CAD">
+    <img src="../../assets/CAD_datapulse.png" class="cad_image" alt="3D CAD rendering of the DataPulse enclosure">
+    <p>3D CAD Rendering of Project</p>
+  </div>
+
+  <!-- ── Project metadata band ─────────────────────────────── -->
+  <section class="details" aria-label="Project details">
+    <div class="column">
+      <div class="item"><h2>Project Details</h2></div>
+      <div class="item"><p>Personal Project</p></div>
+      <div class="item"><p>2024</p></div>
+    </div>
+    <div class="column">
+      <div class="item"><h2>Role</h2></div>
+      <div class="item"><p>Embedded Research</p></div>
+      <div class="item"><p>Prototyping</p></div>
+      <div class="item"><p>3D Modeling</p></div>
+      <div class="item"><p>Software Development</p></div>
+    </div>
+    <div class="column">
+      <div class="item"><h2>Duration</h2></div>
+      <div class="item"><p>May – June 2024</p></div>
+    </div>
+  </section>
+
+  <!-- ── Introduction ──────────────────────────────────────── -->
+  <section class="introduction">
+    <h2>Overview</h2>
+    <p>This project consists of hardware and software components. The Arduino reads sensor data and transmits it over Bluetooth, while a Python script scans for the Arduino, retrieves the readings, and logs them periodically into a CSV file. The data can then be visualized by plotting changes over time. All scripts are available in the
+      <a href="https://github.com/yunhaod/DataPulse" target="_blank" rel="noopener">GitHub Repository</a>.
+    </p>
+    <p>The CAD model houses a battery, microcontroller, and environmental sensor inside a compact wireless enclosure.</p>
+  </section>
+
+  <!-- ── Outcome ───────────────────────────────────────────── -->
+  <section class="outcome">
+    <div class="scan_pic">
+      <img src="../../assets/code_result.png" class="scan_res" alt="Terminal output showing initial Bluetooth interface success">
+      <p>Initial success interfacing with Bluetooth features</p>
+    </div>
+    <h2>Outcome</h2>
+    <p>Across every system — hardware and software — each component successfully completes its role, ensuring reliability for any users who find this project useful.</p>
+  </section>
+
+  <!-- ── Prototype band ────────────────────────────────────── -->
+  <section class="prototype">
+    <div class="proto_img">
+      <img src="../../assets/data_charts.png" class="chart" alt="Sample environmental trend chart generated from logged CSV data">
+      <span class="caption">Sample trend chart generated from logged data</span>
+    </div>
+    <div class="text-container">
+      <h2>Prototype</h2>
+      <p>The Arduino exposes a Bluetooth service with humidity and temperature characteristics.</p>
+      <p>The Python script scans for nearby Bluetooth modules, filters by device name, connects to the Arduino, and reads the specific characteristics — humidity and temperature.</p>
+      <p>Data is periodically written to a CSV file and can be analyzed with Matplotlib to visualize environmental changes over time.</p>
+    </div>
+  </section>
+
+  <!-- ── Takeaways ─────────────────────────────────────────── -->
+  <section class="takeaway">
+    <h2>Takeaways</h2>
+    <div class="takeaway_content">
+      <div class="takeaway_text">
+        <p>This project gave me hands-on experience with Bluetooth communication on embedded systems, and let me explore the full arc of an embedded project — from hardware prototyping and 3D modeling to software development and data analysis.</p>
+      </div>
+      <div class="temp_bluetooth">
+        <img src="../../assets/temp_icon.png" class="temp" alt="Temperature and Bluetooth icons">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer>
+    <div class="prev-project">
+      <a href="../../projects/securemotion/securemotion.html">
+        <span class="next-proj-arrow">&larr;</span>
+        <span class="prev-proj-text">SecureMotion</span>
+      </a>
+    </div>
+    <div class="next-project">
+      <a href="../../projects/snapspecs/snapspecs.html">
+        <span class="next-proj-text">SnapSpecs</span>
+        <span class="next-proj-arrow">&rarr;</span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

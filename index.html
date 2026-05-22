@@ -4,250 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YunHao Dong</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo.png" style="height:50%;">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
-    
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+
+    <!-- ── Desktop nav ───────────────────────────────────────── -->
     <nav id="desktop-nav">
         <div class="logo">YunHao Dong</div>
-        <div>
-          <ul class="nav-links">
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="project_listing/projects.html">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <nav id="hamburger-nav">
+        </ul>
+    </nav>
+
+    <!-- ── Hamburger nav ─────────────────────────────────────── -->
+    <nav id="hamburger-nav">
         <div class="logo">YunHao Dong</div>
         <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="project_listing/projects.html" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="project_listing/projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
         </div>
-      </nav>
-      <section id ="profile">
-        <div class = "section__pic-container">
-            <img src="./assets/profile-pic.jpg" alt="Yun Hao Dong Picture" class ="profile-pic">
+    </nav>
+
+    <!-- ── Profile / Hero ────────────────────────────────────── -->
+    <section id="profile">
+        <div class="profile-pic-wrap">
+            <img src="./assets/profile-pic.jpg" alt="YunHao Dong" class="profile-pic">
         </div>
-        <div class = "section__text">
-            <p class = "section_text_p1">Hello, I'm YunHao</p>
-            <div class = "btn-container">
-                <button 
-                class="btn btn-color-2" onclick="window.open('./assets/Yunhao_Dong_Resume.pdf')">
-                Resume →
-            </button>
-            <button 
-                class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contact Info ↓
-            </button>
+        <div class="section__text">
+            <p class="section_text_p1">Hello, I'm YunHao</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Yunhao_Dong_Resume.pdf')">Resume →</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info ↓</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt = "My Linkedin Profile"
-                class="icon" onclick="location.href= 'https://www.linkedin.com/in/yunhaodong/'"/>
-                <img src="./assets/github.png" alt = "My Github Profile"
-                class="icon" onclick="location.href= 'https://github.com/yunhaod'"/>
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/yunhaodong/'">
+                <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/yunhaod'">
             </div>
         </div>
-      </section>
-      <section id="about">
+    </section>
+
+    <!-- ── About ─────────────────────────────────────────────── -->
+    <section id="about">
         <h1 class="title">About Me</h1>
         <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="./assets/about-pic.png"
-              alt="Profile picture"
-              class="about-pic"
-            />
-          </div>
-          <div class="about-details-container">
-            <div class="text-container">
-              <p>
-                → Hi! I'm Yun, studying Computer Engineering at NYU Tandon.
-                    My interest lies at the intersection of hardware and software
-                    to create more impactful technology (IoT, Embedded Systems, etc).
-              </p>
-              <br>
-              <p>
-                → I'm the Electrical Systems Engineer of the Robotics Design Team at NYU Tandon. My involvement in the team
-                  revolves around developing the embedded code for our robot and systems engineering coordination with other
-                  competencies. 
-              </p>
-              <br>
-              <p>
-                → I love exploring new places and restaurants! I have been to several boba shops and dessert places in NY. 
-                Aside from being a foodie, I also enjoy going to the gym. 
-              </p>
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="About photo" class="about-pic">
             </div>
-          </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>→ Hi! I'm Yun, studying Computer Engineering at NYU Tandon. My interest lies at the intersection of hardware and software to create more impactful technology (IoT, Embedded Systems, etc).</p>
+                    <p>→ I'm the Electrical Systems Engineer of the Robotics Design Team at NYU Tandon. My involvement revolves around developing embedded code for our robot and systems engineering coordination with other competencies.</p>
+                    <p>→ I love exploring new places and restaurants! I've been to several boba shops and dessert places in NY. Aside from being a foodie, I also enjoy going to the gym.</p>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
+
+    <!-- ── Experience ────────────────────────────────────────── -->
     <section id="experience">
-        <h1 class="title"> My Experience</h1>
+        <h1 class="title">My Experience</h1>
+
         <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="./assets/honeywell_sq.png"
-              alt="honeywell logo picture"
-              class="experience3-pic"
-            />
-          </div>
-          <div class="experience-details-container">
-          <div class = "headline">
-              <h1>
-                  Honeywell • 2025
-              </h1>
-          </div>
-            <div class="text-container">
-              <p>
-                <br>
-                I worked under the building automation sector of Honeywell. My 
-                project was to design an asset tracking system that also involved trying 
-                to utilize the newest feature of Bluetooth 6.0 : Channel Sounding. 
-              </p>
-              <br>
+            <div class="section__pic-container">
+                <img src="./assets/honeywell_sq.png" alt="Honeywell logo" class="exp-pic">
             </div>
-          </div>
+            <div class="experience-details-container">
+                <div class="headline"><h2>Honeywell · 2025</h2></div>
+                <div class="text-container">
+                    <p>I worked under the building automation sector of Honeywell. My project was to design an asset tracking system that also involved utilizing the newest feature of Bluetooth 6.0: Channel Sounding.</p>
+                </div>
+            </div>
         </div>
+
         <div class="section-container">
             <div class="section__pic-container">
-              <img
-                src="./assets/ugsrp-pic.png"
-                alt="Ultraleap hands"
-                class="experience1-pic"
-              />
+                <img src="./assets/ugsrp-pic.png" alt="NYU UGSRP" class="exp-pic">
             </div>
             <div class="experience-details-container">
-            <div class = "headline">
-                <h1>
-                    NYU Undergraduate Summer Research • 2023
-                </h1>
+                <div class="headline"><h2>NYU Undergraduate Summer Research · 2023</h2></div>
+                <div class="text-container">
+                    <p>I partook in Professor S. Farokh Atashzar's ongoing research projects alongside 4 other student researchers. One project involved connecting Unity and computer vision for hand tracking in virtual environments.</p>
+                    <p><a href="https://drive.google.com/file/d/1lnqC07irXoni8VL5D6uIoNivJ2w9C3oI/view?usp=sharing" target="_blank" rel="noopener">Read more about the work here →</a></p>
+                </div>
             </div>
-              <div class="text-container">
-                <p>
-                  <br>
-                  I was able to partake in Professor S. Farokh Atashzar's ongoing research 
-                  projects along with 4 other student researchers. One of our project was connecting
-                  Unity and computer vision for hand tracking in the virtual environment. 
-                </p>
-                <br>
-                <p>
-                  <a href = "https://drive.google.com/file/d/1lnqC07irXoni8VL5D6uIoNivJ2w9C3oI/view?usp=sharing"
-                    target = "_blank">
-                  <u>Read more abour work here</u>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="section-container">
+        </div>
+
+        <div class="section-container">
             <div class="section__pic-container">
-              <img
-                src="./assets/rdt-pic.png"
-                alt="RDT picture"
-                class="experience2-pic"
-              />
+                <img src="./assets/rdt-pic.png" alt="NYU Robotics Design Team" class="exp-pic">
             </div>
             <div class="experience-details-container">
-            <div class = "headline">
-                <h1>
-                    NYU Robotics Design Team • 2022
-                </h1>
+                <div class="headline"><h2>NYU Robotics Design Team · 2022</h2></div>
+                <div class="text-container">
+                    <p>Our team competes in NASA's Robotic Mining Competition: Lunabotics. As a systems engineer I ensure our robot adheres to the competition rubric guidelines.</p>
+                    <p><a href="http://nyu-rdt.github.io" target="_blank" rel="noopener">Read more about our team and what we do →</a></p>
+                </div>
             </div>
-              <div class="text-container">
-                <p>
-                  <br>
-                  Our team competes in NASA's Robotic Mining Competition: Lunabotics. 
-                  Part of what I do as a systems engineer is to make 
-                  sure our robot adheres to the guidelines listed in the competition rubric. 
-                </p>
-                <br>
-                <p>
-                  <a href = "http://nyu-rdt.github.io" 
-                  target = "_blank" >
-                    <u>Read more about our team and what we do</u>
-                  </a>
-                  <br>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="section-container">
+        </div>
+
+        <div class="section-container">
             <div class="section__pic-container">
-              <img
-                src="./assets/doris-dev-pic.png"
-                alt="Profile picture"
-                class="experience3-pic"
-              />
+                <img src="./assets/doris-dev-pic.png" alt="Doris Dev" class="exp-pic">
             </div>
             <div class="experience-details-container">
-            <div class = "headline">
-                <h1>
-                    Doris Dev • 2022
-                </h1>
+                <div class="headline"><h2>Doris Dev · 2022</h2></div>
+                <div class="text-container">
+                    <p>During the summer I worked with industry design engineers developing new consumer products. I was responsible for testing current market goods and brainstorming improvements that could be implemented.</p>
+                    <p><a href="https://www.doris.dev" target="_blank" rel="noopener">Check out Doris Dev and their designs →</a></p>
+                </div>
             </div>
-              <div class="text-container">
-                <p>
-                  <br>
-                  During the summer, I got to work with industry design engineers in
-                  developing new consumer products. I was responsible for testing current 
-                  market goods that were competitive, and brainstorm plausible improvements
-                  that can be implemented.
-                </p>
-                <br>
-                <p >
-                <a href = https://www.doris.dev target = "_blank">
-                    <u>Check out Doris Dev and their Designs</u> 
-                </a>
-                  <br>
-                </p>
-              </div>
-            </div>
-          </div>
-          
-      </section>
-      <section id="contact">
+        </div>
+    </section>
+
+    <!-- ── Contact ───────────────────────────────────────────── -->
+    <section id="contact">
         <h1 class="title">Let's Chat</h1>
         <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:yd2435@nyu.edu">yd2435@nyu.edu</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/yun-hao-dong/">LinkedIn</a></p>
-          </div>
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon">
+                <p><a href="mailto:yd2435@nyu.edu">yd2435@nyu.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/yun-hao-dong/" target="_blank" rel="noopener">LinkedIn</a></p>
+            </div>
         </div>
-      </section>
-      <footer>
-        <div class="footer">
-          <ul class="foot_links">
+    </section>
+
+    <!-- ── Footer ────────────────────────────────────────────── -->
+    <footer>
+        <ul class="foot-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="project_listing/projects.html">Projects</a></li>
-          </ul>
-        </div>
-      </footer>
+        </ul>
+    </footer>
+
     <script src="scipt.js"></script>
 </body>
 </html>

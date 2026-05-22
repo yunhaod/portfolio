@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap");
+
+/* ── Design tokens ─────────────────────────────────────────── */
+:root {
+  --color-forest:        #3a5c2e;
+  --color-forest-dark:   #2c4722;
+  --color-forest-light:  #eef4eb;
+  --color-bark:          #f5ede0;
+  --color-accent:        #826cff;
+  --color-accent-link:   #1a8fe0;
+  --color-text:          #1a1a1a;
+  --color-text-muted:    #555;
+  --color-nav-link:      #333;
+  --color-border:        rgba(0, 0, 0, 0.1);
+
+  --page-padding: clamp(1.25rem, 5vw, 4rem);
+  --section-gap:  clamp(2.5rem, 6vw, 5rem);
+  --radius:       10px;
+
+  --fs-hero:  clamp(2rem,   5vw,  3.2rem);
+  --fs-h2:    clamp(1.3rem, 2.5vw, 1.75rem);
+  --fs-body:  clamp(0.95rem, 1.5vw, 1.05rem);
+  --fs-lead:  clamp(1rem,   2vw,   1.35rem);
+  --fs-small: 0.875rem;
+
+  --transition: 0.22s ease;
+}
+
+/* ── Reset ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--fs-body);
+  line-height: 1.7;
+  color: var(--color-text);
+  background: #fff;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+/* ── Page entrance ─────────────────────────────────────────── */
+.fade-in { animation: fadeInUp 0.7s ease-out both; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Nav / title bar ───────────────────────────────────────── */
+.project_title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 1.25rem var(--page-padding) 0;
+  font-family: "Fraunces", serif;
+  font-size: var(--fs-hero);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.project_links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--fs-small);
+  font-weight: 400;
+}
+
+.project_links a {
+  text-decoration: none;
+  color: var(--color-nav-link);
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.project_links a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 1.5px;
+  background: var(--color-forest);
+  transition: width var(--transition);
+}
+.project_links a:hover::after { width: 100%; }
+
+/* ── Details band ──────────────────────────────────────────── */
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  background: var(--color-forest);
+  color: #fff;
+  margin-top: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 3vw, 2.5rem) var(--page-padding);
+}
+
+.column {
+  padding: 0.75rem 1.25rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.column:last-child { border-right: none; }
+.column .item + .item { margin-top: 0.35rem; }
+
+.column h2 {
+  font-family: "Fraunces", serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-bottom: 0.6rem;
+}
+
+.column p {
+  font-size: var(--fs-small);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* ── Shared section spacing ────────────────────────────────── */
+.introduction,
+.outcome,
+.submit {
+  padding: var(--section-gap) var(--page-padding);
+}
+
+/* ── Shared headings ───────────────────────────────────────── */
+.introduction h2,
+.outcome h2,
+.solution h2,
+.submit h4 {
+  font-family: "Fraunces", serif;
+  font-size: var(--fs-h2);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+/* ── Shared prose ──────────────────────────────────────────── */
+.introduction p,
+.outcome p {
+  max-width: 72ch;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+/* ── Challenge band ────────────────────────────────────────── */
+.challenge {
+  position: relative;
+  min-height: 42vh;
+  background-image: url('../../assets/amazonia_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.challenge .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.52);
+  display: flex;
+  align-items: center;
+  padding: var(--page-padding);
+}
+
+.challenge_content {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  color: #fff;
+}
+
+.title h2 {
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.challenge_para p {
+  font-size: var(--fs-lead);
+  line-height: 1.6;
+  max-width: 52ch;
+}
+
+.challenge_para a {
+  color: #a8d8a0;
+  text-underline-offset: 3px;
+}
+
+/* ── Solution band ─────────────────────────────────────────── */
+.solution {
+  background: var(--color-bark);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: clamp(2rem, 4vw, 3.5rem) var(--page-padding);
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.text-container {
+  flex: 1 1 min(45%, 480px);
+}
+
+.solution h2 { margin-bottom: 1rem; }
+
+.solution p {
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  max-width: 52ch;
+}
+
+.slide_pic {
+  flex: 1 1 min(50%, 520px);
+  max-width: 560px;
+  border-radius: var(--radius);
+  object-fit: contain;
+}
+
+/* ── Submit section ────────────────────────────────────────── */
+.submit { border-top: 1px solid var(--color-border); }
+
+.submit h4 {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  margin-bottom: 1.25rem;
+}
+
+.bullet_list ul {
+  list-style: none;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bullet_list li {
+  position: relative;
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+.bullet_list li::before {
+  content: '‣';
+  position: absolute;
+  left: -1.4rem;
+  color: var(--color-accent);
+  font-size: 1.6rem;
+  line-height: 1;
+  top: 0.05em;
+}
+
+.bullet_list a {
+  color: var(--color-accent-link);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.bullet_list a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-forest-light);
+  padding: clamp(1.5rem, 3vw, 2.5rem) var(--page-padding);
+  border-top: 1px solid rgba(58, 92, 46, 0.15);
+}
+
+.prev-project,
+.next-project {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.prev-project a,
+.next-project a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.prev-project:hover .proj-text,
+.next-project:hover .proj-text { text-decoration: underline; }
+
+.proj-arrow { font-size: clamp(1.5rem, 3vw, 2.25rem); line-height: 1; }
+.proj-text  { font-size: clamp(1rem, 2vw, 1.3rem); font-weight: 500; }
+
+/* ── Responsive stacking ───────────────────────────────────── */
+@media (max-width: 700px) {
+  .challenge_content { flex-direction: column; gap: 1rem; }
+  .title h2           { white-space: normal; }
+  .solution           { flex-direction: column; }
+  .text-container     { flex-basis: auto; width: 100%; }
+  .slide_pic          { max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .column { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
+  .column:last-child { border-bottom: none; }
+  footer  { flex-direction: column; gap: 1rem; }
+}

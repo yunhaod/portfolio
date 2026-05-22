@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapSpecs</title>
+  <link rel="stylesheet" href="snapspecs_style.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+</head>
+<body class="fade-in">
+
+  <!-- ── Navigation title bar ──────────────────────────────── -->
+  <h1 class="project_title">
+    SnapSpecs
+    <nav class="project_links" aria-label="Site navigation">
+      <a href="../../index.html">Portfolio</a>
+      <a href="../../project_listing/projects.html">Projects</a>
+    </nav>
+  </h1>
+
+  <!-- ── Project metadata band ─────────────────────────────── -->
+  <section class="details" aria-label="Project details">
+    <div class="column">
+      <div class="item"><h2>Project Details</h2></div>
+      <div class="item"><p>NYU Prototyping Fund</p></div>
+      <div class="item"><p>Spring 2024</p></div>
+    </div>
+    <div class="column">
+      <div class="item"><h2>Team</h2></div>
+      <div class="item"><p>Yun Hao Dong</p></div>
+      <div class="item"><p>Shihang Wei</p></div>
+      <div class="item"><p>Bonnie Wu</p></div>
+    </div>
+    <div class="column">
+      <div class="item"><h2>Role</h2></div>
+      <div class="item"><p>Project Management</p></div>
+      <div class="item"><p>Linux Interfacing</p></div>
+      <div class="item"><p>3D Modeling</p></div>
+      <div class="item"><p>Circuit Wiring</p></div>
+    </div>
+    <div class="column">
+      <div class="item"><h2>Duration</h2></div>
+      <div class="item"><p>January – April 2024</p></div>
+    </div>
+  </section>
+
+  <!-- ── Hero photo (floats right on desktop) ──────────────── -->
+  <div class="background_pic">
+    <img src="../../assets/snapspecs_background.png" class="group_photo" alt="Team members using SnapSpecs prototype iterations">
+    <p>A photo of our team using prototype iterations</p>
+  </div>
+
+  <!-- ── Introduction ──────────────────────────────────────── -->
+  <section class="introduction">
+    <h2>Introduction</h2>
+    <p>Our project was selected for the
+      <a href="https://makerspace.engineering.nyu.edu/funding/prototypingfund/" target="_blank" rel="noopener">NYU Prototyping Fund Challenge</a>,
+      which culminated in a showcase demonstration to over 100 students and entrepreneurial faculty members along with other project teams.
+    </p>
+  </section>
+
+  <!-- ── Outcome ───────────────────────────────────────────── -->
+  <section class="outcome">
+    <h2>Outcome</h2>
+    <p>Successfully developed a functional prototype and pitched our project to the NYU Tandon community.</p>
+  </section>
+
+  <!-- ── Issue / solution band ─────────────────────────────── -->
+  <section class="issue" aria-label="Problem and solution">
+    <img src="../../assets/raise_phone.png" class="raise_phone" alt="Person raising phone to take a photo while travelling">
+    <div class="text-container">
+      <div class="issue_text">
+        <h2>Issue</h2>
+        <p>When travelling, it's a hassle to constantly raise and lower your phone just to take pictures.</p>
+      </div>
+      <div class="solution_text">
+        <h2>Our Solution</h2>
+        <p>SnapSpecs eliminates that friction — built specifically for glasses to capture the most natural view matching what your eyes see.</p>
+        <p>A single button press takes a photo with haptic feedback and uploads it directly to a Google Drive folder.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Prototype ─────────────────────────────────────────── -->
+  <section class="prototype">
+    <h2>The Prototype</h2>
+    <div class="content">
+      <div class="proto_text">
+        <p>Our Raspberry Pi interfaces with a tiny camera module and handles all scripts on boot, ensuring full automation and a smooth user experience. The script handles button feedback control, photo relocation, and cloud transmission to Google Drive.</p>
+      </div>
+      <img src="../../assets/snapspecs_schematic.png" class="schematic" alt="SnapSpecs circuit schematic diagram">
+    </div>
+  </section>
+
+  <!-- ── Next steps ────────────────────────────────────────── -->
+  <section class="next">
+    <h2>Next Steps</h2>
+    <div class="proto_text">
+      <p>Some improvements we identified: making the system viable without Wi-Fi — since connectivity isn't always available while travelling — and reducing the overall size and weight to improve portability and give users a lighter, more comfortable feel.</p>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer>
+    <div class="prev-project">
+      <a href="../../projects/datapulse/datapulse.html">
+        <span class="next-proj-arrow">&larr;</span>
+        <span class="prev-proj-text">DataPulse</span>
+      </a>
+    </div>
+    <div class="next-project">
+      <a href="../../projects/tracknsave/tracknsave.html">
+        <span class="next-proj-text">Track N' Save</span>
+       <span class="next-proj-arrow">&rarr;</span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPlatter</title>
+    <link rel="stylesheet" href="petplatter_style.css">
+    <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+</head>
+<body class="fade-in">
+
+    <!-- ── Nav ─────────────────────────────────────────────── -->
+    <h1 class="project_title">
+        PetPlatter
+        <section class="project_links">
+            <a href="../../index.html">Portfolio</a>
+            <a href="../../project_listing/projects.html">Projects</a>
+        </section>
+    </h1>
+
+    <!-- ── Hero model image ─────────────────────────────────── -->
+    <div class="model">
+        <img src="../../assets/petplatter_model.png" alt="PetPlatter device: food dispenser and water pump" class="model_image">
+    </div>
+    <p class="model_caption">Device Outlook: Food Dispenser (Left) &amp; Water Pump (Right)</p>
+
+    <!-- ── Meta band ────────────────────────────────────────── -->
+    <section class="details">
+        <div class="column">
+            <div class="item"><h2>Project Details</h2></div>
+            <div class="item"><p>Personal Project</p></div>
+            <div class="item"><p>2024</p></div>
+        </div>
+        <div class="column">
+            <div class="item"><h2>Role</h2></div>
+            <div class="item"><p>Mobile App Integration</p></div>
+            <div class="item"><p>Hardware Planning</p></div>
+            <div class="item"><p>Embedded Software</p></div>
+            <div class="item"><p>IoT Research</p></div>
+            <div class="item"><p>3D Modeling</p></div>
+        </div>
+        <div class="column">
+            <div class="item"><h2>Duration</h2></div>
+            <div class="item"><p>July – August 2024</p></div>
+        </div>
+    </section>
+
+    <!-- ── Introduction ─────────────────────────────────────── -->
+    <section class="introduction">
+        <div class="introduction-content">
+            <div class="intro_text">
+                <h2>Introduction</h2>
+                <p>
+                    I really want a shiba (maybe more than one) in the future. It has inspired me to build
+                    my own pet-feeding device that I can control from afar. The heart of long-distance control
+                    is WebSockets — an IoT protocol that supports bidirectional, real-time, and persistent
+                    connections between clients and servers. Here, an iOS app and the physical device are
+                    connected for seamless communication and command execution.
+                </p>
+                <p>
+                    The app contains features for feeding food and refilling water. More technical details
+                    can be found in the
+                    <a href="https://github.com/yunhaod/PetPlatter" target="_blank" rel="noopener">GitHub Repository</a>.
+                </p>
+            </div>
+            <div class="shiba_img">
+                <img src="../../assets/shiba.png" alt="Shiba Inu illustration" class="shiba">
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Outcome ───────────────────────────────────────────── -->
+    <section class="outcome">
+        <h2>Outcome</h2>
+        <div class="gif_pic">
+            <img src="../../assets/petplatter_appgif.gif" class="app_res" alt="App performance demonstration">
+            <p>The app successfully receives warnings and the device executes commands from the app.</p>
+        </div>
+    </section>
+
+    <!-- ── Prototype band ───────────────────────────────────── -->
+    <section class="prototype">
+        <div class="proto_img">
+            <img src="../../assets/petplatter_ideation.png" alt="Ideation sketches and prototype" class="web">
+        </div>
+        <div class="proto-text-container">
+            <h2>Ideation to Prototype</h2>
+            <p>
+                The WebSocket server was initially hosted locally, which later transitioned to
+                AWS Elastic Compute Cloud for improvements in security and reliability.
+            </p>
+        </div>
+    </section>
+
+    <!-- ── Final app interface ──────────────────────────────── -->
+    <section class="final_app">
+        <img src="../../assets/pet_app_interface.png" alt="Final iOS app interface" class="final_app_img">
+        <div class="final_app_text">
+            <p>
+                The iOS app has two views: a connection page and a main functionality page.
+                When the app receives a low-water warning, it disappears automatically after the bowl is refilled.
+            </p>
+        </div>
+    </section>
+
+    <!-- ── Hardware ─────────────────────────────────────────── -->
+    <section class="hardware">
+        <div class="hardware-content">
+            <div class="hardware_text">
+                <h2>Hardware</h2>
+                <p>An ESP32 was used for WiFi connectivity to interface with the WebSocket server.</p>
+                <p>
+                    The device uses servo motors to replenish food and a peristaltic liquid pump for water.
+                    The servo flips open a cap so food falls out, then closes it after a set time interval.
+                </p>
+            </div>
+            <div class="servo">
+                <img src="../../assets/petplatter_servo.gif" alt="Servo motor opening cap" class="servo_open">
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Takeaway ─────────────────────────────────────────── -->
+    <section class="takeaway">
+        <h2>Takeaways</h2>
+        <div class="takeaway_content">
+            <p>
+                This project was genuinely fun to build. It introduced me to IoT protocols and deeper aspects of
+                embedded software. The most exciting moments were when the WebSocket server correctly echoed
+                messages and when everything came together with Swift for the app.
+            </p>
+        </div>
+    </section>
+
+    <!-- ── Footer ───────────────────────────────────────────── -->
+    <footer>
+        <div class="prev-project">
+            <span class="prev-proj-arrow">&larr;</span>
+            <a href="../mistlink/mistlink.html">
+                <span class="prev-proj-text">MistLink</span>
+            </a>
+        </div>
+        <div class="next-project">
+            <a href="../securemotion/securemotion.html">
+                <span class="next-proj-text">SecureMotion</span>
+            </a>
+            <span class="next-proj-arrow">&rarr;</span>
+        </div>
+    </footer>
+
+</body>
+</html>

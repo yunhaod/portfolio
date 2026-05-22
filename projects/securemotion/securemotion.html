@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureMotion</title>
+  <link rel="stylesheet" href="securemotion_style.css">
+  <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+</head>
+<body class="fade-in">
+
+  <!-- ── Navigation title bar ──────────────────────────────── -->
+  <h1 class="project_title">
+    SecureMotion
+    <nav class="project_links" aria-label="Site navigation">
+      <a href="../../index.html">Portfolio</a>
+      <a href="../../project_listing/projects.html">Projects</a>
+    </nav>
+  </h1>
+
+  <!-- ── App interface hero ────────────────────────────────── -->
+  <div class="app_interface">
+    <img src="../../assets/secureapp_connect.png" class="app_image" alt="SecureMotion app connect screen">
+    <img src="../../assets/secureapp_connected.png" class="app_image" alt="SecureMotion app connected screen">
+  </div>
+  <div class="app_caption">
+    <p>Final App Interfaces</p>
+  </div>
+
+  <!-- ── Project metadata band ─────────────────────────────── -->
+  <section class="details" aria-label="Project details">
+    <div class="column">
+      <div class="item"><h2>Project Details</h2></div>
+      <div class="item"><p>Personal Project</p></div>
+      <div class="item"><p>2024</p></div>
+    </div>
+    <div class="column">
+      <div class="item"><h2>Role</h2></div>
+      <div class="item"><p>Mobile App Integration</p></div>
+      <div class="item"><p>Linux Interfacing</p></div>
+      <div class="item"><p>Embedded Software Development</p></div>
+      <div class="item"><p>IoT Research</p></div>
+    </div>
+    <div class="column">
+      <div class="item"><h2>Duration</h2></div>
+      <div class="item"><p>June – July 2024</p></div>
+    </div>
+  </section>
+
+  <!-- ── Overview ──────────────────────────────────────────── -->
+  <section class="introduction">
+    <h2>Overview</h2>
+    <p>This project improves home security by notifying homeowners of any intrusion detected by a motion sensor. Upon connecting and subscribing via the app, messages appear indicating whether a threat has been detected.</p>
+    <p>More details can be found in the <a href="https://github.com/yunhaod/SecureMotion" target="_blank" rel="noopener">GitHub Repository</a>.</p>
+  </section>
+
+  <!-- ── Outcome ───────────────────────────────────────────── -->
+  <section class="outcome">
+    <h2>Outcome</h2>
+    <div class="finalsystem_pic">
+      <img src="../../assets/finalsystem.png" class="finalsystem_res" alt="Final assembled SecureMotion system">
+      <p>The app successfully receives sensor messages from the client upon any updates.</p>
+    </div>
+  </section>
+
+  <!-- ── Introduction / MQTT ───────────────────────────────── -->
+  <section class="introduction">
+    <h2>Introduction</h2>
+    <p>This project uses MQTT (Message Queuing Telemetry Transport) to transmit messages between clients. MQTT is a lightweight IoT messaging protocol ideal for remote device communication. The MQTT broker is responsible for relaying messages across topics within the network.</p>
+  </section>
+
+  <!-- ── Prototype / iterations band ──────────────────────── -->
+  <section class="prototype">
+    <div class="proto_img">
+      <img src="../../assets/local_publish_subscribe.png" class="chart" alt="Terminal output from local MQTT broker during testing">
+      <span class="caption">Local MQTT Broker Output</span>
+    </div>
+    <div class="text-container">
+      <h2>Iterations</h2>
+      <p>The first few iterations tested functionality on a local MQTT broker running from my computer. After validating the system, the broker was hosted over the internet with an authentication layer to allow only authorized users.</p>
+    </div>
+  </section>
+
+  <!-- ── Initial app testing ───────────────────────────────── -->
+  <section class="initial_app">
+    <img src="../../assets/initial_app_testing.png" class="initial_app_img" alt="Initial app testing with messages appearing in the output console">
+    <div class="initial_app_text">
+      <p>Messages appeared after subscribing, shown in the output console for the initial app design. In the final version, most buttons are hidden until the MQTT Manager is connected to the broker, to prevent API misuse.</p>
+    </div>
+  </section>
+
+  <!-- ── Hardware ──────────────────────────────────────────── -->
+  <section class="hardware">
+    <div class="door">
+      <img src="../../assets/door_opening.png" class="door_open" alt="Door with magnet attached for hall effect sensor detection">
+    </div>
+    <h2>Hardware</h2>
+    <p>An ESP32 was chosen to process sensor data and connect to the MQTT broker. The microcontroller detects intrusions using a hall effect sensor.</p>
+    <p>A magnet is attached to the door — when it swings open, the sensor picks up the event and notifies the homeowner.</p>
+    <p>The warning persists until the app publishes an acknowledgement message.</p>
+  </section>
+
+  <!-- ── Demo GIF ──────────────────────────────────────────── -->
+  <section class="gif">
+    <div class="demo">
+      <img src="../../assets/securemotion_gif.gif" class="demo_gif" alt="Animated demonstration of SecureMotion triggering and acknowledging an alert">
+    </div>
+    <p>To dismiss the warning, an acknowledgement message must be sent from the app.</p>
+  </section>
+
+  <!-- ── Takeaways ─────────────────────────────────────────── -->
+  <section class="takeaway">
+    <h2>Takeaways</h2>
+    <div class="takeaway_content">
+      <p>Through this project I deepened my understanding of IoT protocols, authentication systems, and backend integration in Swift. I gained comprehensive insight into the fundamentals of MQTT and how to integrate it into real-world applications.</p>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer>
+    <div class="prev-project">
+      <a href="../../projects/petplatter/petplatter.html">
+        <span class="next-proj-arrow">&larr;</span>
+        <span class="prev-proj-text">PetPlatter</span>
+      </a>
+    </div>
+    <div class="next-project">
+      <a href="../../projects/datapulse/datapulse.html">
+        <span class="next-proj-text">DataPulse</span>
+        <span class="next-proj-arrow">&rarr;</span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

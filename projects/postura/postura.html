@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postura</title>
+    <link rel="stylesheet" href="postura_style.css">
+    <link rel="icon" type="image/x-icon" href="../../assets/logo.png">
+</head>
+<body class="fade-in">
+
+    <!-- ── Nav ───────────────────────────────────────────────── -->
+    <h1 class="project_title">
+        Postura
+        <nav class="project_links" aria-label="Site navigation">
+            <a href="../../index.html">Portfolio</a>
+            <a href="../../project_listing/projects.html">Projects</a>
+        </nav>
+    </h1>
+
+    <!-- ── Hero connection diagram ───────────────────────────── -->
+    <div class="conn">
+        <img src="../../assets/postura_connection.png" alt="Postura system connection diagram" class="conn_image">
+    </div>
+
+    <!-- ── Meta band ─────────────────────────────────────────── -->
+    <section class="details" aria-label="Project details">
+        <div class="column">
+            <div class="item"><h2>Project Details</h2></div>
+            <div class="item"><p>Capstone Project</p></div>
+            <div class="item"><p>2025 – 2026</p></div>
+        </div>
+        <div class="column">
+            <div class="item"><h2>Team</h2></div>
+            <div class="item"><p>Yunhao Dong</p></div>
+            <div class="item"><p>Bonnie Wu</p></div>
+            <div class="item"><p>Annie Huang</p></div>
+            <div class="item"><p>Sharon Chi</p></div>
+        </div>
+        <div class="column">
+            <div class="item"><h2>Role</h2></div>
+            <div class="item"><p>Machine Learning</p></div>
+            <div class="item"><p>Hardware Planning</p></div>
+            <div class="item"><p>Embedded Software</p></div>
+            <div class="item"><p>Edge Impulse Research</p></div>
+            <div class="item"><p>System Integration</p></div>
+        </div>
+        <div class="column">
+            <div class="item"><h2>Duration</h2></div>
+            <div class="item"><p>September – May</p></div>
+        </div>
+    </section>
+
+    <!-- ── Overview ──────────────────────────────────────────── -->
+    <section class="introduction">
+        <h2>Overview</h2>
+        <div class="introduction-content">
+            <div class="intro_text">
+                <p>
+                    The majority of the labor force conducts office-like, administrative work — a population
+                    that extends to academia, where students spend prolonged durations sitting and studying.
+                    Postura is a cushion-like product aimed at helping consumers track their posture through
+                    a machine learning model deployed on an embedded system device.
+                </p>
+                <p>
+                    More technical details can be found in the
+                    <a href="https://github.com/yunhaod/Postura" target="_blank" rel="noopener">GitHub Repository</a>.
+                </p>
+            </div>
+            <div class="web_img">
+                <img src="../../assets/sitting_stats.png" alt="Sitting statistics infographic" class="web">
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Final device ──────────────────────────────────────── -->
+    <section class="model_section">
+        <h2>Final Device Design</h2>
+        <div class="model_img">
+            <img src="../../assets/postura_final_look.png" alt="Postura final device" class="model">
+        </div>
+    </section>
+
+    <!-- ── Outcome ───────────────────────────────────────────── -->
+    <section class="outcome">
+        <h2>Outcome</h2>
+        <div class="gif_pic">
+            <img src="../../assets/postura_demo.gif" class="device_res" alt="Postura live demo">
+            <p>
+                The neural network on the cushion makes predictions from incoming sensor data.
+                Depending on the model's prediction, timers for good and bad posture increment accordingly.
+                0 = Bad, 1 = Good.
+            </p>
+        </div>
+    </section>
+
+    <!-- ── Design Process ────────────────────────────────────── -->
+    <section class="hardware">
+        <h2>Design Process</h2>
+        <div class="hardware-body">
+            <div class="nn_div">
+                <img src="../../assets/Colored_neural_network.svg.png" alt="Neural network diagram" class="nn_img">
+            </div>
+            <div class="hardware_text">
+                <p>
+                    The original project did not start with an embedded machine learning model. After initial
+                    testing, the noise present in the sensor readings was not ideal for manual computations,
+                    which would also involve a large number of computations given the many ways to achieve
+                    good posture.
+                </p>
+                <p>
+                    Some sensors were deemed infeasible and removed after the first iteration (the flex sensor).
+                    Accuracy started around 70% and improved to 97% through further feature engineering, value
+                    scaling, and adding more layers to the neural network within memory constraints. Additional
+                    data samples were also collected to improve the generalizability of the learned weights.
+                </p>
+            </div>
+        </div>
+        <div class="training_res">
+            <img src="../../assets/postura_training_res.png" alt="Model training results" class="training">
+        </div>
+    </section>
+
+    <!-- ── Takeaway ──────────────────────────────────────────── -->
+    <section class="takeaway">
+        <h2>Takeaways</h2>
+        <p>
+            This project allowed me to combine my interest in embedded systems and machine learning into a
+            single product. It was exciting to apply knowledge from my Machine Learning course to improve
+            accuracy — since the entire project depends on whether the model can correctly predict posture
+            status. Professor Fund's ML course greatly helped me understand the foundations of ML.
+        </p>
+    </section>
+
+    <!-- ── Footer ────────────────────────────────────────────── -->
+    <footer>
+        <div class="next-project">
+            <a href="../mistlink/mistlink.html">
+                <span class="proj-text">MistLink</span>
+                <span class="proj-arrow">&rarr;</span>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
