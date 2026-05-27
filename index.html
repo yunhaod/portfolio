@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
 </head>
 <body>
 
@@ -19,23 +20,27 @@
             <li><a href="project_listing/projects.html">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
     </nav>
 
     <!-- ── Hamburger nav ─────────────────────────────────────── -->
     <nav id="hamburger-nav">
         <div class="logo">YunHao Dong</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="hamburger-nav-right">
+            <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Toggle dark mode"></button>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="project_listing/projects.html" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
             </div>
-            <ul class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="project_listing/projects.html" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
         </div>
     </nav>
 
@@ -51,8 +56,8 @@
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info ↓</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/yunhaodong/'">
-                <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/yunhaod'">
+                <a href="https://www.linkedin.com/in/yunhaodong/" target="_blank" rel="noopener"><img src="./assets/linkedin.png" alt="LinkedIn" class="icon"></a>
+                <a href="https://github.com/yunhaod" target="_blank" rel="noopener"><img src="./assets/github.png" alt="GitHub" class="icon"></a>
             </div>
         </div>
     </section>
@@ -154,6 +159,6 @@
         </ul>
     </footer>
 
-    <script src="scipt.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

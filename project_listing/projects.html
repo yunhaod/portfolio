@@ -7,10 +7,14 @@
   <title>Projects</title>
   <link rel="stylesheet" href="project_style.css"/>
   <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
 </head>
 <body class="fade-in">
 
-  <a href="../index.html" class="back-button">&#8592; Portfolio</a>
+  <div class="top-bar">
+    <a href="../index.html" class="back-button">&#8592; Portfolio</a>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
+  </div>
 
   <main id="projects-container">
 
@@ -59,11 +63,22 @@
   </main>
 
   <script>
-    /* Allow keyboard activation of card items */
     document.querySelectorAll('.project_item').forEach(card => {
       card.addEventListener('keydown', e => {
         if (e.key === 'Enter' || e.key === ' ') card.click();
       });
+    });
+
+    const btn = document.getElementById('theme-toggle');
+    btn.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      }
     });
   </script>
 
