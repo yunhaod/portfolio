@@ -559,19 +559,18 @@ footer {
 #skills { background: var(--color-bg-subtle); }
 
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2rem 3rem;
   max-width: 900px;
   margin-inline: auto;
-  justify-content: center;
 }
 
 .skills-category {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  min-width: 180px;
+  align-items: flex-start;
 }
 
 .skills-label {
