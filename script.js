@@ -23,11 +23,8 @@ function setupToggle(id) {
     const isDark = root.getAttribute("data-theme") === "dark";
     applyTheme(!isDark);
     localStorage.setItem("theme", isDark ? "light" : "dark");
-    syncToggles();
   });
 }
-
-function syncToggles() {}
 
 setupToggle("theme-toggle");
 setupToggle("theme-toggle-mobile");
@@ -49,3 +46,26 @@ function updateActiveLink() {
 
 window.addEventListener("scroll", updateActiveLink, { passive: true });
 updateActiveLink();
+
+/* ── Scroll-reveal ──────────────────────────────────────────── */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
+
+/* ── Back to top ────────────────────────────────────────────── */
+const backToTop = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+  backToTop.classList.toggle("visible", window.scrollY > 400);
+}, { passive: true });
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

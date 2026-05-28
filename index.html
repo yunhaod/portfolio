@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YunHao Dong</title>
+
+    <!-- SEO / social sharing -->
+    <meta name="description" content="YunHao Dong — Computer Engineering student at NYU Tandon specializing in Embedded Systems, IoT, and Hardware-Software Integration.">
+    <meta property="og:title" content="YunHao Dong — Portfolio">
+    <meta property="og:description" content="Computer Engineering @ NYU Tandon. Embedded Systems, IoT, and Hardware–Software Integration.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yunhaod.github.io">
+    <meta property="og:image" content="https://yunhaod.github.io/assets/profile-pic.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="YunHao Dong — Portfolio">
+    <meta name="twitter:description" content="Computer Engineering @ NYU Tandon. Embedded Systems, IoT, and Hardware–Software Integration.">
+
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
@@ -16,6 +28,7 @@
         <div class="logo">YunHao Dong</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="project_listing/projects.html">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -36,6 +49,7 @@
                 </div>
                 <ul class="menu-links">
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                     <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                     <li><a href="project_listing/projects.html" onclick="toggleMenu()">Projects</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -51,9 +65,11 @@
         </div>
         <div class="section__text">
             <p class="section_text_p1">Hello, I'm YunHao</p>
+            <p class="section_text_p2">Computer Engineering @ NYU Tandon</p>
+            <p class="section_text_p3">Embedded Systems &middot; IoT &middot; ML</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Yunhao_Dong_Resume.pdf')">Resume →</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info ↓</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/Yunhao_Dong_Resume.pdf')" target="_blank">Resume &rarr;</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info &darr;</button>
             </div>
             <div id="socials-container">
                 <a href="https://www.linkedin.com/in/yunhaodong/" target="_blank" rel="noopener"><img src="./assets/linkedin.png" alt="LinkedIn" class="icon"></a>
@@ -64,16 +80,59 @@
 
     <!-- ── About ─────────────────────────────────────────────── -->
     <section id="about">
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
+        <h1 class="title reveal">About Me</h1>
+        <div class="section-container reveal">
             <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="About photo" class="about-pic">
+                <img src="./assets/about-pic.png" alt="About photo" class="about-pic" loading="lazy">
             </div>
             <div class="about-details-container">
-                <div class="text-container">
-                    <p>→ Hi! I'm Yun, studying Computer Engineering at NYU Tandon. My interest lies at the intersection of hardware and software to create more impactful technology (IoT, Embedded Systems, etc).</p>
-                    <p>→ I'm the Electrical Systems Engineer of the Robotics Design Team at NYU Tandon. My involvement revolves around developing embedded code for our robot and systems engineering coordination with other competencies.</p>
-                    <p>→ I love exploring new places and restaurants! I've been to several boba shops and dessert places in NY. Aside from being a foodie, I also enjoy going to the gym.</p>
+                <ul class="about-list">
+                    <li>Hi! I'm Yun, studying Computer Engineering at NYU Tandon. My interest lies at the intersection of hardware and software to create more impactful technology (IoT, Embedded Systems, etc).</li>
+                    <li>I'm the Electrical Systems Engineer of the Robotics Design Team at NYU Tandon. My involvement revolves around developing embedded code for our robot and systems engineering coordination with other competencies.</li>
+                    <li>I love exploring new places and restaurants! I've been to several boba shops and dessert places in NY. Aside from being a foodie, I also enjoy going to the gym.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Skills ────────────────────────────────────────────── -->
+    <section id="skills">
+        <h1 class="title reveal">Skills</h1>
+        <div class="skills-grid reveal">
+            <div class="skills-category">
+                <span class="skills-label">Languages</span>
+                <div class="skills-pills">
+                    <span class="skill-pill">C / C++</span>
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">MATLAB</span>
+                </div>
+            </div>
+            <div class="skills-category">
+                <span class="skills-label">Hardware</span>
+                <div class="skills-pills">
+                    <span class="skill-pill">ESP32</span>
+                    <span class="skill-pill">Arduino</span>
+                    <span class="skill-pill">Raspberry Pi</span>
+                    <span class="skill-pill">KiCad</span>
+                </div>
+            </div>
+            <div class="skills-category">
+                <span class="skills-label">Protocols &amp; Comms</span>
+                <div class="skills-pills">
+                    <span class="skill-pill">BLE / Bluetooth</span>
+                    <span class="skill-pill">MQTT</span>
+                    <span class="skill-pill">WebSocket</span>
+                    <span class="skill-pill">Matter</span>
+                </div>
+            </div>
+            <div class="skills-category">
+                <span class="skills-label">Tools &amp; Frameworks</span>
+                <div class="skills-pills">
+                    <span class="skill-pill">FreeRTOS</span>
+                    <span class="skill-pill">Edge ML</span>
+                    <span class="skill-pill">Unity</span>
+                    <span class="skill-pill">Git</span>
                 </div>
             </div>
         </div>
@@ -81,55 +140,56 @@
 
     <!-- ── Experience ────────────────────────────────────────── -->
     <section id="experience">
-        <h1 class="title">My Experience</h1>
+        <h1 class="title reveal">My Experience</h1>
 
-        <div class="section-container">
+        <div class="section-container reveal">
             <div class="section__pic-container">
-                <img src="./assets/honeywell_sq.png" alt="Honeywell logo" class="exp-pic">
+                <img src="./assets/honeywell_sq.png" alt="Honeywell logo" class="exp-pic" loading="lazy">
             </div>
             <div class="experience-details-container">
-                <div class="headline"><h2>Honeywell · 2025</h2></div>
+                <div class="headline"><h2>Honeywell &middot; 2025</h2></div>
                 <div class="text-container">
                     <p>I worked under the building automation sector of Honeywell. My project was to design an asset tracking system that also involved utilizing the newest feature of Bluetooth 6.0: Channel Sounding.</p>
+                    <p><a href="https://buildings.honeywell.com" target="_blank" rel="noopener">Learn more about Honeywell Building Technologies &rarr;</a></p>
                 </div>
             </div>
         </div>
 
-        <div class="section-container">
+        <div class="section-container reveal">
             <div class="section__pic-container">
-                <img src="./assets/ugsrp-pic.png" alt="NYU UGSRP" class="exp-pic">
+                <img src="./assets/ugsrp-pic.png" alt="NYU UGSRP" class="exp-pic" loading="lazy">
             </div>
             <div class="experience-details-container">
-                <div class="headline"><h2>NYU Undergraduate Summer Research · 2023</h2></div>
+                <div class="headline"><h2>NYU Undergraduate Summer Research &middot; 2023</h2></div>
                 <div class="text-container">
                     <p>I partook in Professor S. Farokh Atashzar's ongoing research projects alongside 4 other student researchers. One project involved connecting Unity and computer vision for hand tracking in virtual environments.</p>
-                    <p><a href="https://drive.google.com/file/d/1lnqC07irXoni8VL5D6uIoNivJ2w9C3oI/view?usp=sharing" target="_blank" rel="noopener">Read more about the work here →</a></p>
+                    <p><a href="https://drive.google.com/file/d/1lnqC07irXoni8VL5D6uIoNivJ2w9C3oI/view?usp=sharing" target="_blank" rel="noopener">Read more about the work here &rarr;</a></p>
                 </div>
             </div>
         </div>
 
-        <div class="section-container">
+        <div class="section-container reveal">
             <div class="section__pic-container">
-                <img src="./assets/rdt-pic.png" alt="NYU Robotics Design Team" class="exp-pic">
+                <img src="./assets/rdt-pic.png" alt="NYU Robotics Design Team" class="exp-pic" loading="lazy">
             </div>
             <div class="experience-details-container">
-                <div class="headline"><h2>NYU Robotics Design Team · 2022</h2></div>
+                <div class="headline"><h2>NYU Robotics Design Team &middot; 2022</h2></div>
                 <div class="text-container">
                     <p>Our team competes in NASA's Robotic Mining Competition: Lunabotics. As a systems engineer I ensure our robot adheres to the competition rubric guidelines.</p>
-                    <p><a href="http://nyu-rdt.github.io" target="_blank" rel="noopener">Read more about our team and what we do →</a></p>
+                    <p><a href="http://nyu-rdt.github.io" target="_blank" rel="noopener">Read more about our team and what we do &rarr;</a></p>
                 </div>
             </div>
         </div>
 
-        <div class="section-container">
+        <div class="section-container reveal">
             <div class="section__pic-container">
-                <img src="./assets/doris-dev-pic.png" alt="Doris Dev" class="exp-pic">
+                <img src="./assets/doris-dev-pic.png" alt="Doris Dev" class="exp-pic" loading="lazy">
             </div>
             <div class="experience-details-container">
-                <div class="headline"><h2>Doris Dev · 2022</h2></div>
+                <div class="headline"><h2>Doris Dev &middot; 2022</h2></div>
                 <div class="text-container">
                     <p>During the summer I worked with industry design engineers developing new consumer products. I was responsible for testing current market goods and brainstorming improvements that could be implemented.</p>
-                    <p><a href="https://www.doris.dev" target="_blank" rel="noopener">Check out Doris Dev and their designs →</a></p>
+                    <p><a href="https://www.doris.dev" target="_blank" rel="noopener">Check out Doris Dev and their designs &rarr;</a></p>
                 </div>
             </div>
         </div>
@@ -137,14 +197,14 @@
 
     <!-- ── Contact ───────────────────────────────────────────── -->
     <section id="contact">
-        <h1 class="title">Let's Chat</h1>
-        <div class="contact-info-upper-container">
+        <h1 class="title reveal">Let's Chat</h1>
+        <div class="contact-info-upper-container reveal">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon">
+                <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon" loading="lazy">
                 <p><a href="mailto:yd2435@nyu.edu">yd2435@nyu.edu</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon" loading="lazy">
                 <p><a href="https://www.linkedin.com/in/yun-hao-dong/" target="_blank" rel="noopener">LinkedIn</a></p>
             </div>
         </div>
@@ -154,10 +214,15 @@
     <footer>
         <ul class="foot-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="project_listing/projects.html">Projects</a></li>
         </ul>
+        <p class="foot-copy">&copy; 2025 YunHao Dong</p>
     </footer>
+
+    <!-- ── Back to top ────────────────────────────────────────── -->
+    <button id="back-to-top" aria-label="Back to top">&#8593;</button>
 
     <script src="script.js"></script>
 </body>
