@@ -287,7 +287,7 @@ section {
 
 .section__pic-container {
   flex-shrink: 0;
-  width: clamp(140px, 22vw, 220px);
+  width: clamp(200px, 35vw, 320px);
 }
 
 .about-pic {
